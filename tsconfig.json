@@ -5,8 +5,7 @@
     "moduleResolution": "Node",
     "outDir": "chrome-extension",
     "strict": true,
-    "skipLibCheck": true,
-    "types": ["chrome"] // Only include default types, exclude problematic ones
+    "skipLibCheck": true
   },
   "include": ["src/**/*.ts"]
 }

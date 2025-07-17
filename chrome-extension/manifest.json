@@ -1,20 +1,13 @@
 {
-  "manifest_version": 3,
-  "name": "LeetCode Problem Extractor",
-  "version": "1.0",
-  "description": "Extracts problem title & description from LeetCode dynamically loaded pages",
-  "permissions": ["activeTab", "scripting"],
-  "background": {
-    "service_worker": "background.js"
+  "compilerOptions": {
+    "target": "ES2020",
+    "module": "ESNext",
+    "moduleResolution": "Node",
+    "outDir": "chrome-extension",
+    "strict": true,
+    "skipLibCheck": true,
+    "lib": ["DOM", "ES2020"],
+    "types": ["chrome"]
   },
-  "content_scripts": [
-    {
-      "matches": ["*://leetcode.com/*"],
-      "js": ["content.js"]
-    }
-  ],
-  "action": {
-    "default_title": "LeetCode Extractor"
-  },
-  "host_permissions": ["*://leetcode.com/*"]
+  "include": ["src/**/*.ts"]
 }
