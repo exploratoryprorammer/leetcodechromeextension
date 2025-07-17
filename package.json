@@ -1,0 +1,13 @@
+{
+  "name": "leetcode-problem-extractor",
+  "version": "1.0.0",
+  "description": "Chrome extension to extract LeetCode problem details",
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc --watch"
+  },
+  "devDependencies": {
+    "@types/chrome": "^0.0.269",
+    "typescript": "^5.4.0"
+  }
+}

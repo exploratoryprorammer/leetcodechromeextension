@@ -1,0 +1,20 @@
+{
+  "manifest_version": 3,
+  "name": "LeetCode Problem Extractor",
+  "version": "1.0",
+  "description": "Extracts problem title & description from LeetCode dynamically loaded pages",
+  "permissions": ["activeTab", "scripting"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://leetcode.com/*"],
+      "js": ["content.js"]
+    }
+  ],
+  "action": {
+    "default_title": "LeetCode Extractor"
+  },
+  "host_permissions": ["*://leetcode.com/*"]
+}
